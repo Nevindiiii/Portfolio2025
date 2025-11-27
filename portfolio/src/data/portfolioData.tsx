@@ -25,7 +25,7 @@ export const DATA = {
     { icon: <Facebook size={18} />, link: "#" },
     { icon: <Twitter size={18} />, link: "#" },
     { icon: <Instagram size={18} />, link: "#" },
-    { icon: <Linkedin size={18} />, link: "#" },
+    { icon: <Linkedin size={18} />, link: "https://www.linkedin.com/in/nevindisadeera" },
   ],
   services: [
     {
