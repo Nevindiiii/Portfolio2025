@@ -132,8 +132,8 @@ export const DATA = {
     },
   ],
   testimonials: [
-    { name: "Alex Doe", role: "CEO, Company", text: "Sarita is an incredible designer. She understood our vision perfectly and delivered beyond expectations.", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200" },
-    { name: "Jane Smith", role: "Marketing Director", text: "Professional, creative, and timely. The rebranding project was a huge success thanks to her work.", img: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200" },
-    { name: "Mike Johnson", role: "Developer", text: "Great understanding of web constraints. Her designs were easy to implement and looked amazing.", img: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=200" },
+    { name: "Mrs. DNP Aththanayake", role: "Senior Lecturer, SLIATE", text: "Nevindi is an exceptional student with strong problem-solving skills and dedication to learning. Her final year project demonstrated excellent technical abilities and innovative thinking." },
+   
+    { name: "Kasun Silva", role: "Project Manager, Tech Solutions", text: "Nevindi consistently meets deadlines and communicates effectively throughout project development. Her attention to detail and willingness to learn make her a valuable team member." },
   ]
 };

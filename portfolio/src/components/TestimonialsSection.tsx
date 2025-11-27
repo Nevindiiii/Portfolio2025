@@ -1,4 +1,4 @@
-import { Star } from 'lucide-react';
+import { Star, GraduationCap, Code, Briefcase } from 'lucide-react';
 import { DATA } from '../data/portfolioData';
 
 export default function TestimonialsSection() {
@@ -14,7 +14,11 @@ export default function TestimonialsSection() {
           {DATA.testimonials.map((t) => (
             <div key={`${t.name}-${t.role}`} className="bg-white p-6 md:p-8 rounded-lg shadow-md border-b-4 border-yellow-400 relative">
               <div className="flex items-center gap-3 md:gap-4 mb-4 md:mb-6">
-                <img src={t.img} className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-gray-200" alt={t.name} onError={(e) => { e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIzMiIgZmlsbD0iI0Y5RkFGQiIvPjxjaXJjbGUgY3g9IjMyIiBjeT0iMjQiIHI9IjgiIGZpbGw9IiM5Q0EzQUYiLz48cGF0aCBkPSJNMTYgNTJjMC04LjgzNyA3LjE2My0xNiAxNi0xNnMxNiA3LjE2MyAxNiAxNnYxMkgxNlY1MloiIGZpbGw9IiM5Q0EzQUYiLz48L3N2Zz4='; }} />
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-yellow-400 rounded-full flex items-center justify-center text-gray-900">
+                  {t.role.includes('Lecturer') ? <GraduationCap size={24} className="md:w-8 md:h-8" /> : 
+                   t.role.includes('Developer') ? <Code size={24} className="md:w-8 md:h-8" /> : 
+                   <Briefcase size={24} className="md:w-8 md:h-8" />}
+                </div>
                 <div>
                   <h4 className="font-bold text-base md:text-lg text-gray-900">{t.name}</h4>
                   <span className="text-xs uppercase text-yellow-500 font-bold">{t.role}</span>
