@@ -45,21 +45,22 @@ export const DATA = {
     }
   ],
   stats: [
-    { value: "1+", label: "YEARS EXPERIENCE" },
+    { value: "1.5+", label: "YEARS EXPERIENCE" },
     { value: "7", label: "PROJECTS DONE" },
     { value: "5", label: "TECHNOLOGIES" },
     { value: "100%", label: "DEDICATION" },
   ],
   resume: {
     education: [
-      { year: "2018 - 2020", degree: "Master in Graphics", school: "New York University", desc: "Specialized in advanced typography and brand identity systems." },
-      { year: "2015 - 2018", degree: "Bachelor of Arts", school: "London Art Institute", desc: "Graduated with honors. Focused on visual communication and digital media." },
-      { year: "2014 - 2015", degree: "Diploma in Design", school: "Design Academy", desc: "Foundation course in design principles and color theory." },
+      { year: "2023 - 2025", degree: "Higher National Diploma of Information & Communication Technology", school: "HNDIT-Labuduwa", desc: "Completed with 3.4+ GPA" },
+      { year: "2022 - 2023", degree: " Diploma of Software Engineering ", school: "The Open University of Sri Lanka", desc: "Holded -To be continued as TopUP" },
+      { year: "2021 AL", degree: "Physical Science", school: "St.Mary's Convent", desc: "RESULT:CCC" },
     ],
     experience: [
-      { year: "2020 - Present", role: "Senior Designer", company: "Creative Agency", desc: "Leading a team of designers to deliver high-quality creative solutions for global clients." },
-      { year: "2018 - 2020", role: "Web Designer", company: "Tech Solutions Inc.", desc: "Designed user interfaces for web and mobile applications, focusing on UX best practices." },
-      { year: "2016 - 2018", role: "Junior Designer", company: "StartUp Hub", desc: "Assisted in the creation of marketing materials and social media graphics." },
+      { year: "2025 Septhember - Present", role: "Trainee FullStack Engineer", company: "BotCalm(PVT)LTD", desc: "Builing and Practising FullStack projects under the Tech Leads" },
+      { year: "2024 October - January", role: "UI/UX Developer", company: "Souther Province Irrigation Department", desc: "Designed user interfaces for a website name IrriGo, focusing on UX best practices." },
+      
+      
     ]
   },
   portfolio: [

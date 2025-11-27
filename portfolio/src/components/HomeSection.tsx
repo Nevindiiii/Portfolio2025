@@ -1,6 +1,6 @@
 import { ChevronRight } from 'lucide-react';
 import { DATA } from '../data/portfolioData';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 type NavItem = 'home' | 'about' | 'resume' | 'portfolio' | 'testimonials' | 'contact';
 
@@ -10,6 +10,23 @@ interface HomeSectionProps {
 
 export default function HomeSection({ setActiveTab }: HomeSectionProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const [yearsCount, setYearsCount] = useState(0);
+  const [projectsCount, setProjectsCount] = useState(0);
+
+  useEffect(() => {
+    const yearsTimer = setInterval(() => {
+      setYearsCount(prev => prev < 1 ? prev + 1 : 1);
+    }, 1000);
+    
+    const projectsTimer = setInterval(() => {
+      setProjectsCount(prev => prev < 5 ? prev + 1 : 5);
+    }, 200);
+
+    return () => {
+      clearInterval(yearsTimer);
+      clearInterval(projectsTimer);
+    };
+  }, []);
 
   return (
     <div className="h-full w-full flex relative overflow-hidden bg-white">
@@ -29,18 +46,18 @@ export default function HomeSection({ setActiveTab }: HomeSectionProps) {
           </p>
           <button 
             onClick={() => setActiveTab('about')}
-            className="mt-6 md:mt-8 bg-black text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-bold uppercase tracking-wider hover:bg-yellow-400 hover:text-black transition-colors flex items-center gap-2 mx-auto md:mx-0 text-sm md:text-base"
+            className="mt-6 md:mt-8 bg-black bg-opacity-70 text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-bold uppercase tracking-wider hover:bg-yellow-400 hover:text-black transition-colors flex items-center gap-2 mx-auto md:mx-0 text-sm md:text-base"
           >
             More About Me <ChevronRight size={16} className="md:w-[18px] md:h-[18px]" />
           </button>
           
           <div className="flex gap-3 md:gap-4 justify-center md:justify-start mt-4 md:mt-6">
             <div className="bg-yellow-400 text-gray-900 px-3 py-2 rounded-full flex items-center gap-2 shadow-md">
-              <span className="text-lg md:text-xl font-black">1+</span>
+              <span className="text-lg md:text-xl font-black">{yearsCount}+</span>
               <span className="text-xs md:text-sm font-bold uppercase">Years Exp</span>
             </div>
             <div className="bg-gray-900 text-white px-3 py-2 rounded-full flex items-center gap-2 shadow-md">
-              <span className="text-lg md:text-xl font-black text-yellow-400">5+</span>
+              <span className="text-lg md:text-xl font-black text-yellow-400">{projectsCount}+</span>
               <span className="text-xs md:text-sm font-bold uppercase">Projects</span>
             </div>
           </div>

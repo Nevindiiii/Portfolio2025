@@ -1,1 +1,15 @@
 @import "tailwindcss";
+@keyframes moveDown {
+  0% { 
+    top: 0; 
+    opacity: 1; 
+  }
+  100% { 
+    top: 100%; 
+    opacity: 0; 
+  }
+}
+
+.animate-move-down {
+  animation: moveDown 3s infinite linear;
+}

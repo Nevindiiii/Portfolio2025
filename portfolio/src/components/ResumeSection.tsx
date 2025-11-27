@@ -15,10 +15,12 @@ export default function ResumeSection() {
             <h3 className="flex items-center gap-3 text-xl md:text-2xl font-bold mb-6 md:mb-8 uppercase">
               <span className="bg-yellow-400 p-2 rounded-full"><Briefcase size={18} className="md:w-5 md:h-5"/></span> Education
             </h3>
-            <div className="space-y-6 md:space-y-8 border-l-2 border-gray-200 ml-4 md:ml-5 pl-6 md:pl-8">
+            <div className="space-y-6 md:space-y-8 relative ml-4 md:ml-5 pl-6 md:pl-8">
+              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+              <div className="absolute left-[-2px] w-1 h-1 bg-yellow-400 rounded-full animate-move-down"></div>
               {DATA.resume.education.map((item, i) => (
                 <div key={`${item.school}-${item.year}`} className="relative">
-                  <span className="absolute -left-[31px] md:-left-[39px] top-1 h-4 w-4 md:h-5 md:w-5 rounded-full bg-gray-800 border-2 md:border-4 border-white"></span>
+                  <span className="absolute -left-[31px] md:-left-[39px] top-1 h-4 w-4 md:h-5 md:w-5 rounded-full bg-yellow-400 border-2 md:border-4 border-white animate-pulse"></span>
                   <span className="inline-block px-2 md:px-3 py-1 bg-gray-200 text-xs font-bold rounded-full mb-2">{item.year}</span>
                   <h4 className="text-lg md:text-xl font-bold uppercase text-gray-800">{item.degree}</h4>
                   <p className="text-gray-500 text-sm mb-2">{item.school}</p>
@@ -32,10 +34,12 @@ export default function ResumeSection() {
             <h3 className="flex items-center gap-3 text-xl md:text-2xl font-bold mb-6 md:mb-8 uppercase">
               <span className="bg-yellow-400 p-2 rounded-full"><Briefcase size={18} className="md:w-5 md:h-5"/></span> Experience
             </h3>
-            <div className="space-y-6 md:space-y-8 border-l-2 border-gray-200 ml-4 md:ml-5 pl-6 md:pl-8">
+            <div className="space-y-6 md:space-y-8 relative ml-4 md:ml-5 pl-6 md:pl-8">
+              <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
+              <div className="absolute left-[-2px] w-1 h-1 bg-yellow-400 rounded-full animate-move-down" style={{animationDelay: '1.5s'}}></div>
               {DATA.resume.experience.map((item, i) => (
                 <div key={`${item.company}-${item.year}`} className="relative">
-                  <span className="absolute -left-[31px] md:-left-[39px] top-1 h-4 w-4 md:h-5 md:w-5 rounded-full bg-gray-800 border-2 md:border-4 border-white"></span>
+                  <span className="absolute -left-[31px] md:-left-[39px] top-1 h-4 w-4 md:h-5 md:w-5 rounded-full bg-yellow-400 border-2 md:border-4 border-white animate-pulse"></span>
                   <span className="inline-block px-2 md:px-3 py-1 bg-gray-200 text-xs font-bold rounded-full mb-2">{item.year}</span>
                   <h4 className="text-lg md:text-xl font-bold uppercase text-gray-800">{item.role}</h4>
                   <p className="text-gray-500 text-sm mb-2">{item.company}</p>

@@ -32,21 +32,29 @@ export default function AboutSection() {
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-            <div className="space-y-1">
-              <span className="text-gray-400 text-xs md:text-sm uppercase">Name</span>
-              <p className="font-bold text-gray-800 text-sm md:text-base wrap-break-word">{DATA.profile.name}</p>
+            <div className="group bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-yellow-400 hover:border-yellow-500">
+              <span className="text-gray-400 text-xs md:text-sm uppercase group-hover:text-yellow-500 transition-colors">Name</span>
+              <p className="font-bold text-gray-800 text-sm md:text-base wrap-break-word group-hover:text-gray-900">{DATA.profile.name}</p>
             </div>
-            <div className="space-y-1">
-              <span className="text-gray-400 text-xs md:text-sm uppercase">Email</span>
-              <p className="font-bold text-gray-800 text-sm md:text-base break-all">{DATA.profile.email}</p>
+            <div 
+              className="group bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-yellow-400 hover:border-yellow-500 cursor-pointer"
+              onClick={() => window.location.href = `mailto:${DATA.profile.email}`}
+              title="Click to send email"
+            >
+              <span className="text-gray-400 text-xs md:text-sm uppercase group-hover:text-yellow-500 transition-colors">Email</span>
+              <p className="font-bold text-gray-800 text-sm md:text-base break-all group-hover:text-blue-600 group-hover:underline">{DATA.profile.email}</p>
             </div>
-            <div className="space-y-1">
-              <span className="text-gray-400 text-xs md:text-sm uppercase">Role</span>
-              <p className="font-bold text-gray-800 text-sm md:text-base">Freelance</p>
+            <div className="group bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-yellow-400 hover:border-yellow-500">
+              <span className="text-gray-400 text-xs md:text-sm uppercase group-hover:text-yellow-500 transition-colors">Role</span>
+              <p className="font-bold text-gray-800 text-sm md:text-base group-hover:text-gray-900">FullStack Developer</p>
             </div>
-            <div className="space-y-1">
-              <span className="text-gray-400 text-xs md:text-sm uppercase">Phone</span>
-              <p className="font-bold text-gray-800 text-sm md:text-base">{DATA.profile.phone}</p>
+            <div 
+              className="group bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 border-l-4 border-yellow-400 hover:border-yellow-500 cursor-pointer"
+              onClick={() => window.location.href = `tel:${DATA.profile.phone}`}
+              title="Click to call"
+            >
+              <span className="text-gray-400 text-xs md:text-sm uppercase group-hover:text-yellow-500 transition-colors">Phone</span>
+              <p className="font-bold text-gray-800 text-sm md:text-base group-hover:text-green-600 group-hover:underline">{DATA.profile.phone}</p>
             </div>
           </div>
         </div>
