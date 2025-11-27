@@ -40,7 +40,7 @@ export default function HomeSection({ setActiveTab }: HomeSectionProps) {
               <span className="text-xs md:text-sm font-bold uppercase">Years Exp</span>
             </div>
             <div className="bg-gray-900 text-white px-3 py-2 rounded-full flex items-center gap-2 shadow-md">
-              <span className="text-lg md:text-xl font-black text-yellow-400">10+</span>
+              <span className="text-lg md:text-xl font-black text-yellow-400">5+</span>
               <span className="text-xs md:text-sm font-bold uppercase">Projects</span>
             </div>
           </div>

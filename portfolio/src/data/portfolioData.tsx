@@ -45,10 +45,10 @@ export const DATA = {
     }
   ],
   stats: [
-    { value: "10+", label: "YEARS EXPERIENCE" },
-    { value: "450", label: "PROJECTS DONE" },
-    { value: "65", label: "AWARDS WON" },
-    { value: "300+", label: "HAPPY CLIENTS" },
+    { value: "1+", label: "YEARS EXPERIENCE" },
+    { value: "7", label: "PROJECTS DONE" },
+    { value: "5", label: "TECHNOLOGIES" },
+    { value: "100%", label: "DEDICATION" },
   ],
   resume: {
     education: [
@@ -63,12 +63,73 @@ export const DATA = {
     ]
   },
   portfolio: [
-    { id: 1, title: "Modern Brand", category: "print", img: "https://images.unsplash.com/photo-1600607686527-6fb886090705?auto=format&fit=crop&q=80&w=800" },
-    { id: 2, title: "Dark UI Kit", category: "web", img: "https://images.unsplash.com/photo-1555421689-492633762719?auto=format&fit=crop&q=80&w=800" },
-    { id: 3, title: "Portrait Session", category: "photo", img: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&q=80&w=800" },
-    { id: 4, title: "Magazine Layout", category: "print", img: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&q=80&w=800" },
-    { id: 5, title: "E-commerce App", category: "web", img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800" },
-    { id: 6, title: "Urban Shot", category: "photo", img: "https://images.unsplash.com/photo-1517799094727-4843e50936e2?auto=format&fit=crop&q=80&w=800" },
+    { 
+      id: 1, 
+      title: "Agency Sample Website", 
+      category: "web", 
+      description: "Frontend Web Agency Sample Website- This is the first react frontend done by me",
+      tech: "React Vite and Tailwind for styling",
+      github: "https://github.com/Nevindiiii/1st_project",
+      demo: "https://project-demo.com",
+      img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" 
+    },
+    { 
+      id: 2, 
+      title: "Token Site of Gaming", 
+      category: "web", 
+      description: "Frontend Gaming site named - MechaCore . Green on black themed website",
+      tech: "React Vite and Tailwind for styling",
+      github: "https://github.com/certix-tokens/MechaCore---T00193",
+      demo: "https://mechacore-t00193.onrender.com/",
+      img: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=800" 
+    },
+    { 
+      id: 3, 
+      title: "Crypto site that named CaptainMEK", 
+      category: "web", 
+      description: "Frontend crypto coin site named - CaptainMEK . themed captainmEK and characters",
+      tech: "React Vite and Tailwind for styling",
+      github: "https://github.com/certix-tokens/CaptainMEK-T00197",
+      demo: "https://captainmek-t00197.onrender.com/",
+      img: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800" 
+    },
+    { 
+      id: 4, 
+      title: "My Portfolio", 
+      category: "web", 
+      description: "TailwindCSS for styling and some component styles",
+      tech: "React Vite and Tailwind for styling",
+      github: "https://github.com/Nevindiiii/Portfolio2025",
+      demo: "https://captainmek-t00197.onrender.com/",
+      img: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=800" 
+    },
+    { 
+      id: 5, 
+      title: "My Final Year Project - speakUP", 
+      category: "web", 
+      description: "Full-stack MERN citizen complaint system for Sri Lanka. Citizens can raise complaints anonymously or with identity, while officers manage, track, and respond efficiently. Features: dashboards, file uploads, maps, chatbot, real-time updates, analytics.",
+      tech: "React Vite and Tailwind for styling",
+      github: "https://github.com/Nevindiiii/speakUP-FinalYearProject",
+      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" 
+    },
+    { 
+      id: 6, 
+      title: "MobileAPP - Expense Tracker", 
+      category: "mobile", 
+      description: "Full-stack Mobile App for track monthly salary and how we waste! AI chatbot will help you to manage your income!",
+      tech: "React Native and NativeWind with AI chatbot",
+      github: "https://github.com/Nevindiiii/expense-tracker-app",
+      img: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=800" 
+    },
+    { 
+      id: 7, 
+      title: "Inventory Management System", 
+      category: "web", 
+      description: "Full-stack Management System",
+      tech: "React , Tailwind CSS, shadcn , react queries , zod zustand , Nodemailer and emailjs",
+      github: "https://github.com/Nevindiiii/expense-tracker-app",
+      img: "https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&q=80&w=800" 
+    },
   ],
   testimonials: [
     { name: "Alex Doe", role: "CEO, Company", text: "Sarita is an incredible designer. She understood our vision perfectly and delivered beyond expectations.", img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200" },
