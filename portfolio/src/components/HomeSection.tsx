@@ -63,7 +63,7 @@ export default function HomeSection({ setActiveTab }: HomeSectionProps) {
         </div>
 
         <div className="md:w-1/2 h-[40vh] sm:h-[50vh] md:h-full flex items-center justify-center relative mt-6 md:mt-0">
-          <div className={`w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-[550px] lg:h-[550px] rounded-full overflow-hidden shadow-2xl z-10 relative transition-all duration-500 hover:scale-105 ${imageLoaded ? 'border-8 md:border-12 border-yellow-300' : 'border-4 border-gray-300 animate-pulse'}`}>
+          <div className="w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] md:w-[450px] md:h-[450px] lg:w-[550px] lg:h-[550px] rounded-full overflow-hidden shadow-2xl z-10 relative transition-all duration-500 hover:scale-105 border-8 md:border-12 border-yellow-300">
             <img 
               src={DATA.profile.mainImage} 
               className={`w-full h-full object-cover transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
