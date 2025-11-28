@@ -18,7 +18,7 @@ export default function ResumeSection() {
             <div className="space-y-6 md:space-y-8 relative ml-4 md:ml-5 pl-6 md:pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
               <div className="absolute left-[-2px] w-1 h-1 bg-yellow-400 rounded-full animate-move-down"></div>
-              {DATA.resume.education.map((item, i) => (
+              {DATA.resume.education.map((item) => (
                 <div key={`${item.school}-${item.year}`} className="relative">
                   <span className="absolute -left-[31px] md:-left-[39px] top-1 h-4 w-4 md:h-5 md:w-5 rounded-full bg-yellow-400 border-2 md:border-4 border-white animate-pulse"></span>
                   <span className="inline-block px-2 md:px-3 py-1 bg-gray-200 text-xs font-bold rounded-full mb-2">{item.year}</span>
@@ -37,7 +37,7 @@ export default function ResumeSection() {
             <div className="space-y-6 md:space-y-8 relative ml-4 md:ml-5 pl-6 md:pl-8">
               <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-gray-200"></div>
               <div className="absolute left-[-2px] w-1 h-1 bg-yellow-400 rounded-full animate-move-down" style={{animationDelay: '1.5s'}}></div>
-              {DATA.resume.experience.map((item, i) => (
+              {DATA.resume.experience.map((item) => (
                 <div key={`${item.company}-${item.year}`} className="relative">
                   <span className="absolute -left-[31px] md:-left-[39px] top-1 h-4 w-4 md:h-5 md:w-5 rounded-full bg-yellow-400 border-2 md:border-4 border-white animate-pulse"></span>
                   <span className="inline-block px-2 md:px-3 py-1 bg-gray-200 text-xs font-bold rounded-full mb-2">{item.year}</span>

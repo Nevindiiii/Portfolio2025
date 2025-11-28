@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Github, ExternalLink } from 'lucide-react';
 import { DATA } from '../data/portfolioData';
 
 export default function PortfolioSection() {
@@ -47,9 +48,31 @@ export default function PortfolioSection() {
                 onError={(e) => { e.currentTarget.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlPC90ZXh0Pjwvc3ZnPg=='; }}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100" 
               />
-              <div className="absolute inset-0 bg-yellow-400/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <h4 className="text-lg md:text-xl font-bold uppercase text-gray-900 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 text-center px-2">{item.title}</h4>
-                <span className="text-xs md:text-sm uppercase tracking-widest text-white mt-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">{item.category}</span>
+              <div className="absolute inset-0 bg-yellow-400/90 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
+                <h4 className="text-lg md:text-xl font-bold uppercase text-gray-900 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 text-center mb-2">{item.title}</h4>
+                <span className="text-xs md:text-sm uppercase tracking-widest text-white mb-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-75">{item.category}</span>
+                <div className="flex gap-3 translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">
+                  <a 
+                    href={item.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-gray-900 text-white p-2 rounded-full hover:bg-white hover:text-gray-900 transition-colors"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <Github size={16} />
+                  </a>
+                  {item.demo && (
+                    <a 
+                      href={item.demo} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="bg-gray-900 text-white p-2 rounded-full hover:bg-white hover:text-gray-900 transition-colors"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <ExternalLink size={16} />
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
